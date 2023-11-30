@@ -109,9 +109,11 @@
       }
       #input1{
         margin-top:00px;
+        
       }
       #input2{
         margin-top:00px;
+          
       }
       
         #btn1{
@@ -131,6 +133,40 @@
         }
         }
     </style>
+ <script>
+    function validate() {
+      // Get the input element
+      var customerIDInput = document.getElementById('customerid');
+
+      // Get the value entered by the user
+      var customerIDValue = customerIDInput.value;
+
+      // Remove leading and trailing whitespaces
+      customerIDValue = customerIDValue.trim();
+
+      // Check if the input is empty
+      if (customerIDValue === '') {
+        alert('Please enter a Customer ID.');
+        return false;
+      }
+
+      // Check if the input contains only digits
+      if (!/^\d+$/.test(customerIDValue)) {
+        alert('Customer ID must contain only digits.');
+        return false;
+      }
+
+      // Check if the input has a maximum length of 10 characters
+      if (customerIDValue.length !== 10) {
+        alert('Customer ID must be exactly 10 digits long.');
+        return false;
+      }
+
+      // If all checks pass, the input is valid
+      alert('Customer ID is valid: ' + customerIDValue);
+      return true;
+    }
+  </script>
   </head>
 
   <body>
@@ -145,22 +181,16 @@
 <div class="row border p-4" id="box1" >
   <div class="col-md-5">
       <p class="6">Customer id:</p>
-      <input type=""  id="input1"></div>
+      <input type=""  id="customerid" size="20" name="customerid" maxlength="10"></div>
      
-
-      </pre>
-    <input type="date" class="form-control" placeholder="starting date" aria-label="First name">
-  </div> -->
   <div class="col-md-5">
       <p class="6">Account no:</p>
-      <input type="" id="input2">
-      <button  id="search">Search</button>
+      <input type="" id="input2" size="20" maxlength="10">
+      <button id="search" onclick="validate()">Submit</button>
     </div>
       
 
-      </pre>
-    <input type="date" class="form-control" placeholder="current date" aria-label="Last name"> -->
-  </div>
+
  <!-- <button  id="search" style="background-color: #194086; margin-top:50px; color:white;  ;width:100px; height: 30px;">Search</button> -->
 </div>
     <section class="section">

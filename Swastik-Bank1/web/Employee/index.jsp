@@ -296,14 +296,3 @@
 
 </body>
 </html>
-=======
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
->>>>>>> 28f20cb16c9fe53405f102aeabed87b260f6cd7e:Swastik-Bank/build/web/index.jsp
