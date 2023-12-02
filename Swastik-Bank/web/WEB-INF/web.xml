@@ -20,6 +20,18 @@
         <servlet-name>DeleteBeneficiary</servlet-name>
         <servlet-class>com.swastik.controlar.DeleteBeneficiary</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>EmployeeLogin</servlet-name>
+        <servlet-class>com.swastik.controlar.EmployeeLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EmployeePassword</servlet-name>
+        <servlet-class>com.swastik.controlar.EmployeePassword</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EmployeeRegister</servlet-name>
+        <servlet-class>com.swastik.controlar.EmployeeRegister</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>test</servlet-name>
         <url-pattern>/test</url-pattern>
@@ -39,5 +51,17 @@
     <servlet-mapping>
         <servlet-name>DeleteBeneficiary</servlet-name>
         <url-pattern>/DeleteBeneficiary</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EmployeeLogin</servlet-name>
+        <url-pattern>/EmployeeLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EmployeePassword</servlet-name>
+        <url-pattern>/EmployeePassword</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EmployeeRegister</servlet-name>
+        <url-pattern>/EmployeeRegister</url-pattern>
     </servlet-mapping>
 </web-app>
